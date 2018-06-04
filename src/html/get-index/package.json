@@ -1,0 +1,6 @@
+{
+  "name": "homepage-get-index",
+  "dependencies": {
+    "@architect/functions": "^1.6.5"
+  }
+}
