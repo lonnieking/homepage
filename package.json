@@ -5,10 +5,10 @@
   "repository": "www.github.com/lonnieking/homepage",
   "main": "index.js",
   "scripts": {
-    "create": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 arc-create",
-    "deploy": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 arc-deploy",
-    "start": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 NODE_ENV=testing nodemon --watch src -e js,css --exec arc-sandbox",
-    "dns": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 arc-dns"
+    "create": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx create",
+    "deploy": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx deploy",
+    "start": "NODE_ENV=development AWS_PROFILE=personal AWS_REGION=ap-southeast-2 nodemon --exec npx sandbox",
+    "dns": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx dns"
   },
   "author": "Lonnie King",
   "license": "ISC",
