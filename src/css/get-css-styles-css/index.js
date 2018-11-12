@@ -10,35 +10,35 @@ let css = `
 
   body {
     color: white;
-    font-family: sans-serif;
-    font-weight: 600px;
-    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
     padding: 20px;
+    width: 75%;
   }
 
   .introduction {
     font-size: 1.5em;
+    font-weight: 700;
     margin-bottom: 15px;
-    text-shadow: 4px 4px 4px #705055;
   }
 
-  .nav {
-    font-size: 1.2em;
+  .content {
+    font-size: 1.5em;
   }
 
-  .nav-link {
-    display: inline-block;
-    margin: 10px 0;
-    text-shadow: 2px 2px 2px #705055;
+  p {
+    line-height: 1.5em;
   }
 
   a {
+    border-bottom: 2px solid #705055;
     color: white;
+    padding: 3px 0;
     text-decoration: none;
   }
 
   a:hover {
-    font-style: italic;
+    background-color: #705055;
   }
 `
 
