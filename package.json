@@ -7,17 +7,15 @@
   "scripts": {
     "create": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx create",
     "deploy": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx deploy",
-    "start": "NODE_ENV=development AWS_PROFILE=personal AWS_REGION=ap-southeast-2 nodemon --exec npx sandbox",
+    "start": "NODE_ENV=testing AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx sandbox",
     "dns": "AWS_PROFILE=personal AWS_REGION=ap-southeast-2 npx dns"
   },
   "author": "Lonnie King",
   "license": "ISC",
   "dependencies": {
-    "@architect/workflows": "^2.2.4"
+    "@architect/architect": "^4.4.12",
+    "install": "^0.12.2",
+    "npm": "^6.5.0"
   },
-  "devDependencies": {
-    "tap-spec": "^4.1.1",
-    "tape": "^4.8.0",
-    "nodemon": "^1.14.3"
-  }
+  "devDependencies": {}
 }

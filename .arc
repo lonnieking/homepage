@@ -1,11 +1,8 @@
 @app
 homepage
 
-@html
+@http
 get /
-
-@css
-/css/styles.css
 
 @static
 staging lkcool-homepage-staging-assets
