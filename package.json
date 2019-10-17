@@ -13,9 +13,9 @@
   "author": "Lonnie King",
   "license": "ISC",
   "dependencies": {
-    "@architect/architect": "^4.4.12",
+    "@architect/architect": "^4.5.6",
     "install": "^0.12.2",
-    "npm": "^6.5.0"
+    "npm": "^6.11.3"
   },
   "devDependencies": {}
 }

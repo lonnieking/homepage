@@ -2,23 +2,19 @@ var layout = require('@architect/shared/layout')
 
 exports.handler = async function http(request) {
 
-  var githubUrl = 'http://github.com/lonnieking'
+  var githubUrl = 'http://www.github.com/lonnieking'
   var brewersFriendUrl = 'https://www.brewersfriend.com/homebrew/brewer/176717/lonnieking'
 
   var body = `
     <div class='introduction'>
-      Hi. I'm Lonnie!
+      Hi! I'm Lonnie!
     </div>
     <div class='content'>
       <p>
-        I like to write <a href=${githubUrl}>code</a> and make <a href=${brewersFriendUrl}>beer</a>.
+        I 'm a <a href=${githubUrl}>software developer</a>, currently working with the amazing folks at <a href='http://www.cogent.co'>Cogent</a>.
       </p>
       <p>
-        My favorite food is pizza.
-      </p>
-      <p>
-        You won't find me on <a href='https://www.youtube.com/watch?v=H34QpoJsmrw'>social media</a>,
-        but feel free to send me some <a href='mailto:hello@lonnie.cool'>electronic mail</a>.
+        If you'd like to get into contact with me, please feel free to send me an <a href='mailto:hello@lonnie.cool'>electronic mail</a>.
       </p>
     </div>
   `
