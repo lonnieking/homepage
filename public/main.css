@@ -10,11 +10,6 @@ body {
   width: 60%;
 }
 
-@font-face {
-  font-family: "corben";
-  src: url("/corben-regular.ttf");
-}
-
 .introduction {
   font-family: "corben", cursive;
   font-size: 2em;
