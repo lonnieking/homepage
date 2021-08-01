@@ -1,25 +1,26 @@
 var layout = require('@architect/shared/layout')
+let arc = require("@architect/functions")
 
-exports.handler = async function http(request) {
-
+function route(_req, res) {
   var githubUrl = 'http://www.github.com/lonnieking'
-  var brewersFriendUrl = 'https://www.brewersfriend.com/homebrew/brewer/176717/lonnieking'
-
+  var cogentUrl = 'http://www.cogent.co'
+  
   var body = `
   <main>
-    <h1>Hi! I'm Lonnie!</h1>
-    <blockquote>
-      I'm a <a href=${githubUrl}>software developer</a>, currently working with the amazing folks at <a href='http://www.cogent.co'>Cogent</a>.
-    </blockquote>
-    <blockquote>
-      If you'd like to get into contact with me, please feel free to send me an <a href='mailto:hello@lonnie.cool'>electronic mail</a>.
-    </blockquote>
+    <h1>Hi! I'm Lonnie.</h1>
+    <p>
+      I love to travel, watch live music, eat (a lot) of pizza, and brew my own beer.
+    </p>
+    <p>
+      I'm also a <a href=${githubUrl}>software developer</a>, currently working with the amazing folks at <a href=${cogentUrl}>Cogent</a> where we build software for some of the greatest companies in Melbourne.
+    </p>
+    <p>
+      If you'd like to get in touch, please send me an <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%68%65%6C%6C%6F%40%6C%6F%6E%6E%69%65%2E%63%6F%6F%6C">e-mail</a>.
+    </p>
   </main>
   `
-  return {
-    status: 201,
-    type: 'text/html; charset=utf8',
-    body: layout(body)
-  }
+  
+  res({ html: layout(body) })
 }
 
+exports.handler = arc.http(route)

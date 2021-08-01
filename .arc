@@ -1,12 +1,17 @@
+@aws
+profile personal
+region ap-southeast-2
+runtime nodejs14.x
+
 @app
 homepage
 
 @http
 get /
+get /resume
 
 @static
-staging lkcool-homepage-staging-assets
-production lkcool-homepage-production-assets
+fingerprint true
 
 @domain
 lonnie.cool
