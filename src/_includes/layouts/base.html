@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link{% if page.url == '/' %} active{% endif %}">
+            {% if page.url == '/' %}<span class="arrow">→</span>{% endif %}home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/writing/" class="nav-link{% if page.url == '/writing/' %} active{% endif %}">
+            {% if page.url == '/writing/' %}<span class="arrow">→</span>{% endif %}writing
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/projects/" class="nav-link{% if page.url == '/projects/' %} active{% endif %}">
+            {% if page.url == '/projects/' %}<span class="arrow">→</span>{% endif %}projects
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
+</body>
+</html>
