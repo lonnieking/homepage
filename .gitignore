@@ -3,3 +3,4 @@ log/
 sam.json
 sam.yaml
 public/static.json
+.vercel

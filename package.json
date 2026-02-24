@@ -1,31 +1,16 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "homepage",
   "main": "index.js",
-  "dependencies": {
-    "@architect/functions": "^4.0.0",
-    "install": "^0.12.2",
-    "npm": "^6.14.14"
-  },
-  "devDependencies": {
-    "aws-sdk": "^2.958.0"
-  },
   "scripts": {
-    "create": "npx arc create",
-    "stg": "npx arc deploy",
-    "prd": "npx arc deploy production",
-    "start": "NODE_ENV=testing npx arc sandbox"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lonnieking/homepage.git"
+    "serve": "eleventy --serve",
+    "build": "eleventy"
   },
   "keywords": [],
-  "author": "Lonnie King",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lonnieking/homepage/issues"
-  },
-  "homepage": "https://github.com/lonnieking/homepage#readme"
+  "description": "",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
 }
